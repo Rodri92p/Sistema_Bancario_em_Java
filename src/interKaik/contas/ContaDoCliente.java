@@ -1,4 +1,4 @@
-package ContaSimples;
+package interKaik.contas;
 
 public class ContaDoCliente {
 

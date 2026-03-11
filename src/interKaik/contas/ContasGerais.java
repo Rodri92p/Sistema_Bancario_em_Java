@@ -1,4 +1,4 @@
-package ContaSimples;
+package interKaik.contas;
 
 import java.io.FileWriter;
 import java.io.File;

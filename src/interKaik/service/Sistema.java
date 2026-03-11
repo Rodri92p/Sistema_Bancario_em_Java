@@ -1,6 +1,9 @@
-package ContaSimples;
+package interKaik.service;
 
 import java.util.Scanner;
+
+import interKaik.contas.ContaDoCliente;
+import interKaik.contas.ContasGerais;
 public class Sistema {
 Scanner scan = new Scanner(System.in);
 
