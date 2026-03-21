@@ -4,13 +4,16 @@ import java.io.FileWriter;
 import java.io.File;
 import java.io.IOException;
 import java.util.Scanner;
+
+import javax.swing.JOptionPane;
+
 import java.util.ArrayList;
 public class ContasGerais {
 	
 private ArrayList<ContaDoCliente> contas = new ArrayList<>();
 
-public void criarConta(String login, String senha) {
-    ContaDoCliente nova = new ContaDoCliente(login, senha);
+public void criarConta(String login, String senha, String pix) {
+    ContaDoCliente nova = new ContaDoCliente(login, senha, pix);
     contas.add(nova);
 }
 
@@ -20,7 +23,6 @@ public ContaDoCliente fazerLogin(String login, String senha) {
      return conta;
  }
 }
- 
  return null;
 }
 
@@ -35,7 +37,8 @@ public void salvarContas() {
       writer.write(
         conta.getLogin() + ";" +
         conta.getSenha() + ";" +
-        conta.getSaldo() + "\n"
+        conta.getSaldo() + ";" +
+        conta.getPix() + "\n"
                                  );
     }
     writer.close();
@@ -46,6 +49,7 @@ public void salvarContas() {
 
 public void carregarContas() {
  try {
+   
    File file = new File("contas.txt");
    Scanner leitor = new Scanner(file);
 
@@ -56,18 +60,24 @@ public void carregarContas() {
     	String login = partes[0];
     	String senha = partes[1];
     	double saldo = Double.parseDouble(partes[2]);
+    	String pix = partes[3];
 
-    	ContaDoCliente conta = new ContaDoCliente(login, senha, saldo);
-
-    	while (conta.getSaldo() < saldo) {
-          conta.depositar(1);
-    	}
+    	ContaDoCliente conta = new ContaDoCliente(login, senha, saldo,pix);
       contas.add(conta);
       }
    leitor.close();
 
  } catch (Exception e) {
   }
+}
+
+public ContaDoCliente buscarContaPorPix(String pix) {
+    for (ContaDoCliente c : contas) {
+        if (c.getPix().equals(pix)) {
+            return c;
+        }
+    }
+    return null;
 }
 
 }

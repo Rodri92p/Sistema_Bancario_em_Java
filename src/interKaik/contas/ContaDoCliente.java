@@ -1,25 +1,39 @@
 package interKaik.contas;
 
+import javax.swing.JOptionPane;
+
 public class ContaDoCliente {
 
 private String login;
 private String senha;
+private String pix;
 private double saldo;
+private String[] favoritos = new String[5];
 
-public ContaDoCliente(String login, String senha) {
+public ContaDoCliente(String login, String senha, String pix) {
   this.login = login;
+  this.pix = pix;
   this.senha = senha;
   this.saldo = 0;
 }
 
-public ContaDoCliente(String login, String senha, double saldo) {
+public ContaDoCliente(String login, String senha, double saldo, String pix) {
   this.login = login;
   this.senha = senha;
   this.saldo = saldo;
+  this.pix = pix;
 }
 
 public String getLogin() {
 	return login;
+}
+
+public String getPix() {
+	return pix;
+}
+
+public void setPix(String pix) {
+	this.pix = pix;
 }
 
 public String getSenha() {
@@ -32,36 +46,33 @@ public double getSaldo() {
 
 public void depositar(double valor) {
   if (valor<=0) {
-   System.out.println();
-   System.out.println("VALOR INVALIDO!");
-   System.out.println();
+	JOptionPane.showMessageDialog(null,"VALOR INVALIDO");
   return;	
   }
-
+  JOptionPane.showMessageDialog(null,"VALOR DEPOSITADO COM SUCESSO");
   saldo += valor;
-   System.out.println();
-   System.out.println("DEPOSITO REALIZADO COM SUCESSO!");
-   System.out.println();
 }
 
 public void sacar(double valor) {
   if (valor<=0) {
-    System.out.println();
-    System.out.println("VALOR INVALIDO!");
-    System.out.println();
+    JOptionPane.showMessageDialog(null,"VALOR INVALIDO");
   return;
   }
 
   if (valor>saldo) {
-	System.out.println();
-	System.out.println("VALOR INSUFICIENTE!");
-	System.out.println();
+   JOptionPane.showMessageDialog(null,"SALDO INSUFICIENTE");
   return;
   }
   
   saldo -= valor;
-  System.out.println();
-  System.out.println("SAQUE REALIZADO COM SUCESSO!");
-  System.out.println();
+  JOptionPane.showMessageDialog(null,"VALOR SACADO COM SUCESSO");
 }
+
+public void enviar(double valor) {
+	  saldo -= valor;
+	}
+
+public void receber(double valor) {
+	  saldo += valor;
+	}
 }
