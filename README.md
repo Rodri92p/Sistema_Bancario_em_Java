@@ -1,63 +1,85 @@
-# 💳 Sistema Bancário em Java
+📌 Sistema Bancário em Java (Desktop)
 
-Projeto desenvolvido com o objetivo de praticar conceitos de Programação Orientada a Objetos (POO) e manipulação de arquivos em Java.
+🏦 Sobre o projeto
 
----
+Este projeto é um sistema bancário desktop desenvolvido em Java com Swing, que simula operações básicas de um banco digital, como criação de contas, login, depósito, saque e transferências via PIX.
+O objetivo do projeto foi aplicar conceitos de:
 
-## 📌 Sobre o Projeto
+Programação Orientada a Objetos (POO);
+Manipulação de arquivos;
+Desenvolvimento de interfaces gráficas (GUI);
+Organização em camadas (GUI + lógica).
 
-Este é um sistema bancário simples executado no console, onde é possível:
+Funcionalidades:
+✔️ Cadastro de conta
+✔️ Login de usuário
+✔️ Depósito de valores
+✔️ Saque com validação de saldo
+✔️ Transferência via PIX entre contas
+✔️ Exclusão de conta
+✔️ Persistência de dados em arquivo (contas.txt)
+✔️ Interface gráfica interativa com Java Swing
 
-- Criar conta
-- Realizar login
-- Depositar valores
-- Sacar valores
-- Excluir conta
-- Salvar e carregar dados automaticamente através de arquivo (.txt)
+🖥️ Tecnologias utilizadas
+Java;
+Java Swing (GUI);
+FileWriter / Scanner (persistência de dados);
+Programação Orientada a Objetos.
 
-O sistema mantém os dados das contas mesmo após o encerramento do programa, utilizando persistência em arquivo.
+📂 Estrutura do projeto:
 
----
+executavel/
+ └── Executar.java
 
-## Conceitos Aplicados
+interKaik/
+ ├── contas/
+ │    ├── ContaDoCliente.java
+ │    └── ContasGerais.java
+ │
+ └── GUI/
+      ├── login/
+      ├── register/
+      ├── inicial/
+      └── servicos/
+           ├── Deposito
+           ├── Saque
+           ├── Transferencia
+           └── Configuracao
+           
+▶️ Como executar:
 
-- Programação Orientada a Objetos (POO)
-- Encapsulamento
-- ArrayList
-- Estruturas de repetição e decisão
-- Manipulação de arquivos (FileWriter e Scanner)
-- Conversão de dados (String para double)
-
----
-
-## 🗂 Estrutura do Projeto
-
-```
-ContaDoCliente.java
-ContasGerais.java
-Sistema.java
+Clone o repositório:
+git clone https://github.com/seu-usuario/seu-repositorio.git
+Abra o projeto em uma IDE (Eclipse, IntelliJ, etc.)
+Execute a classe:
 Executar.java
-```
 
-- `ContaDoCliente` → Representa a conta do usuário  
-- `ContasGerais` → Gerencia todas as contas do sistema  
-- `Sistema` → Controla menus e fluxo do programa  
-- `Executar` → Classe principal (main)
+⚠️ Limitações atuais:
+Senhas ainda não são criptografadas;
+Interface pode ser melhorada (layout e responsividade);
+Não há sistema de extrato bancário;
+Validações de entrada ainda podem ser aprimoradas;
+Arquivo de dados simples (sem banco de dados).
 
----
+🔮 Possiveis melhorias futuras:
+🔐 Criptografia de senha (hash);
+📊 Implementação de extrato bancário;
+🗄️ Integração com banco de dados (MySQL ou SQLite);
+🎨 Melhorias visuais na interface;
+📱 Possível migração para aplicação web ou mobile;
+✅ Validações mais robustas;
+🧠 Aprendizados.
 
-## 💾 Persistência de Dados
+Durante o desenvolvimento deste projeto, foram aplicados conceitos importantes como:
 
-As contas são salvas em um arquivo `contas.txt` no seguinte formato:
+Encapsulamento e organização de código;
+Separação entre interface e lógica;
+Manipulação de arquivos;
+Tratamento de erros;
+Experiência com construção de sistemas completos;
 
-```
-login;senha;saldo
-```
+👨‍💻 Autor
+Kaik Rodrigues.
 
-Ao iniciar o sistema, o arquivo é lido e os objetos são reconstruídos automaticamente.
-
----
-
-## 👨‍💻 Objetivo
-
-Este projeto faz parte da minha evolução prática em Java, com foco na construção de sistemas organizados e estruturados.
+⭐ Considerações finais:
+Este projeto foi um aprendizado feito praticamente as cegas, visto que não sabia bem de como o JavaSwing funcionava, a ideia central era adaptar o projeto anterior que era no terminal, de forma que ele tivesse uma interface, também apliquei conceitos de transferencias intercontas e outras coisas menores como atualização de saldo em tempo real. Esse projeto pode não ser o melhor projeto do mundo, ou o mais inovador, mas fiz com carinho e tenho certeza que saio com mais conhecimento do que quando comecei ele.
