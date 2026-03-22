@@ -1,6 +1,7 @@
 # 📌 Sistema Bancário em Java (Desktop)
 
 **Sobre o projeto:**
+
 Este projeto é um sistema bancário desktop desenvolvido em Java com Swing, que simula operações básicas de um banco digital, como criação de contas, login, depósito, saque e transferências via PIX.
 
 **O objetivo do projeto foi aplicar conceitos de:**
@@ -74,6 +75,6 @@ interKaik/
 - Experiência com construção de sistemas completos;
 
 ---
-##**⭐ Considerações finais:**
+##⭐ Considerações finais:
 
 *Este projeto foi um aprendizado feito praticamente as cegas, visto que não sabia bem de como o JavaSwing funcionava, a ideia central era adaptar o projeto anterior que era no terminal, de forma que ele tivesse uma interface, também apliquei conceitos de transferencias intercontas e outras coisas menores como atualização de saldo em tempo real. Esse projeto pode não ser o melhor projeto do mundo, ou o mais inovador, mas fiz com carinho e tenho certeza que saio com mais conhecimento do que quando comecei ele.*
