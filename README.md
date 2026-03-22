@@ -78,3 +78,17 @@ interKaik/
 ##⭐ Considerações finais:
 
 *Este projeto foi um aprendizado feito praticamente as cegas, visto que não sabia bem de como o JavaSwing funcionava, a ideia central era adaptar o projeto anterior que era no terminal, de forma que ele tivesse uma interface, também apliquei conceitos de transferencias intercontas e outras coisas menores como atualização de saldo em tempo real. Esse projeto pode não ser o melhor projeto do mundo, ou o mais inovador, mas fiz com carinho e tenho certeza que saio com mais conhecimento do que quando comecei ele.*
+
+![image alt](https://github.com/Rodri92p/Sistema_Bancario_em_Java/blob/48a651301c8d77f569405db5f02cee68efd9a931/Login.png)
+
+![image alt](https://github.com/Rodri92p/Sistema_Bancario_em_Java/blob/48a651301c8d77f569405db5f02cee68efd9a931/Registro.png)
+
+![image alt](https://github.com/Rodri92p/Sistema_Bancario_em_Java/blob/48a651301c8d77f569405db5f02cee68efd9a931/Inicio.png)
+
+![image alt](https://github.com/Rodri92p/Sistema_Bancario_em_Java/blob/48a651301c8d77f569405db5f02cee68efd9a931/Saque.png)
+
+![image alt](https://github.com/Rodri92p/Sistema_Bancario_em_Java/blob/48a651301c8d77f569405db5f02cee68efd9a931/Transferencia.png)
+
+![image alt](https://github.com/Rodri92p/Sistema_Bancario_em_Java/blob/48a651301c8d77f569405db5f02cee68efd9a931/Deposito.png)
+
+![image alt](https://github.com/Rodri92p/Sistema_Bancario_em_Java/blob/48a651301c8d77f569405db5f02cee68efd9a931/Atendimento.png)
