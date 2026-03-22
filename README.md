@@ -8,6 +8,7 @@ O objetivo do projeto foi aplicar conceitos de:
 Manipulação de arquivos;
 Desenvolvimento de interfaces gráficas (GUI);
 Organização em camadas (GUI + lógica).*
+
 ---
 **Funcionalidades:**
 *✔️ Cadastro de conta
@@ -24,6 +25,7 @@ Java;
 Java Swing (GUI);
 FileWriter / Scanner (persistência de dados);
 Programação Orientada a Objetos.
+
 ---
 📂 Estrutura do projeto:
 
@@ -44,6 +46,7 @@ interKaik/
            ├── Saque
            ├── Transferencia
            └── Configuracao
+           
 ---
 **Limitações atuais:**
 Senhas ainda não são criptografadas;
@@ -59,6 +62,7 @@ Integração com banco de dados (MySQL ou SQLite);
 Melhorias visuais na interface;
 Possível migração para aplicação web ou mobile;
 Validações mais robustas;
+
 ---
 **Durante o desenvolvimento deste projeto, foram aplicados conceitos importantes como:**
 Encapsulamento e organização de código;
@@ -66,7 +70,7 @@ Separação entre interface e lógica;
 Manipulação de arquivos;
 Tratamento de erros;
 Experiência com construção de sistemas completos;
----
 
+---
 ##**⭐ Considerações finais:**
 *Este projeto foi um aprendizado feito praticamente as cegas, visto que não sabia bem de como o JavaSwing funcionava, a ideia central era adaptar o projeto anterior que era no terminal, de forma que ele tivesse uma interface, também apliquei conceitos de transferencias intercontas e outras coisas menores como atualização de saldo em tempo real. Esse projeto pode não ser o melhor projeto do mundo, ou o mais inovador, mas fiz com carinho e tenho certeza que saio com mais conhecimento do que quando comecei ele.*
